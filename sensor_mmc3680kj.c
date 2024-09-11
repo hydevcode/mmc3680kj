@@ -64,7 +64,7 @@ static rt_err_t _mmc3680kj_init(struct rt_sensor_intf *intf)
     return RT_EOK;
 }
 
-static rt_size_t _mmc3680kj_polling_get_data(rt_sensor_t sensor, struct rt_sensor_data *data)
+static RT_SIZE_TYPE _mmc3680kj_polling_get_data(rt_sensor_t sensor, struct rt_sensor_data *data)
 {
     if (sensor->info.type == RT_SENSOR_CLASS_MAG)
     {
@@ -79,7 +79,7 @@ static rt_size_t _mmc3680kj_polling_get_data(rt_sensor_t sensor, struct rt_senso
     return 1;
 }
 
-static rt_size_t _mmc3680kj_fetch_data(struct rt_sensor_device *sensor, void *buf, rt_size_t len)
+static RT_SIZE_TYPE _mmc3680kj_fetch_data(struct rt_sensor_device *sensor, void *buf, rt_size_t len)
 {
     RT_ASSERT(buf);
 
