@@ -4,7 +4,8 @@ Import('rtconfig')
 src   = []
 cwd   = GetCurrentDir()
 
-src += Glob('sensor_mmc3680kj.c')
+if GetDepend('PKG_MMC3680KJ_USING_SENSOR_V1'):
+    src += Glob('sensor_mmc3680kj.c')
 src += Glob('lib/mmc3680kj.c')
 
 # add mmc3680kj include path.
