@@ -5,7 +5,8 @@ src   = []
 cwd   = GetCurrentDir()
 
 if GetDepend('PKG_MMC3680KJ_USING_SENSOR_V1'):
-    src += Glob('sensor_mmc3680kj.c')
+    src += Glob('memsic_mmc3680kj_sensor_v1.c')
+    
 src += Glob('lib/mmc3680kj.c')
 
 # add mmc3680kj include path.

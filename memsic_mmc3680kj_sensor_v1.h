@@ -7,8 +7,8 @@
  * Date           Author       Notes
  * 2021-12-16     zhourq       the first version
  */
-#ifndef APPLICATIONS_MMC3680KJ_MMC3680KJ_H_
-#define APPLICATIONS_MMC3680KJ_MMC3680KJ_H_
+#ifndef _MEMSIC_MMC3680KJ_SENSOR_V1_H_
+#define _MEMSIC_MMC3680KJ_SENSOR_V1_H_
 
 #include <rtdevice.h>
 
@@ -28,4 +28,4 @@
 int rt_hw_mmc3680kj_init(const char *name, struct rt_sensor_config *cfg);
 
 
-#endif /* APPLICATIONS_MMC3680KJ_MMC3680KJ_H_ */
+#endif /* _MEMSIC_MMC3680KJ_SENSOR_V1_H_ */

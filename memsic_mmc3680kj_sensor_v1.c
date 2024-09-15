@@ -11,11 +11,11 @@
 #include "string.h"
 #define DBG_ENABLE
 #define DBG_LEVEL DBG_INFO
-#define DBG_SECTION_NAME  "sensor.memsic.mmc3680kj"
+#define DBG_SECTION_NAME  "memsic.mmc3680kj.sensor.v1"
 #define DBG_COLOR
 #include <rtdbg.h>
 
-#include "sensor_mmc3680kj.h"
+#include "memsic_mmc3680kj_sensor_v1.h"
 
 #define SENSOR_MAG_RANGE_MIN    -30000
 #define SENSOR_MAG_RANGE_MAX    30000
